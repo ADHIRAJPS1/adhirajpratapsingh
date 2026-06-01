@@ -1,7 +1,7 @@
 import Image from "next/image";
 import profileImage from "../public/profile-image.png";
 
-export const Founder = () => {
+export default function Founder  ()  {
   return (
     <section className="px-8 lg:px-20 py-24">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
