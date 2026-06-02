@@ -18,11 +18,15 @@ import {
   MessageCircle,
   Send,
 } from "lucide-react";
+// import profileImage from "/public/profile-image.png";
+import Navbar from "@/components/navigation";
 
 const Contact = () => {
+  console.log( " profile Image = " ); 
   return (
-    <div className="bg-[#020817] min-h-screen text-white overflow-hidden">
 
+    <div className="bg-[#020817] min-h-screen text-white overflow-hidden">
+      <Navbar />
       {/* Background Glow */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -73,11 +77,11 @@ const Contact = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-yellow-500 blur-3xl opacity-20 rounded-full"></div>
 
-              <img
-                src="/images/adhiraj-profile.png"
+              {/* <img
+                src={profileImage.src}
                 alt="Adhiraj Pratap Singh"
                 className="relative w-[380px] h-[380px] object-cover rounded-full border-4 border-yellow-500 shadow-2xl"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -91,7 +95,8 @@ const Contact = () => {
             <Mail className="text-yellow-400 mb-4" size={30} />
             <h3 className="font-semibold mb-2">Email</h3>
             <p className="text-slate-400 text-sm">
-              connect@adhirajpratapsingh.in
+              connect
+              <br />@adhirajpratapsingh.in
             </p>
           </div>
 
@@ -160,16 +165,16 @@ const Contact = () => {
                 className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4"
               />
 
-              <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4">
-                <option>Select Service</option>
-                <option>Research & Consulting</option>
-                <option>Market Research</option>
-                <option>Data Analytics</option>
+                          {/* <img
+                            src={profileImage.src}
+                            alt="Adhiraj Pratap Singh"
+                            className="relative w-[380px] h-[380px] object-cover rounded-full border-4 border-yellow-500 shadow-2xl"
+                          /> */}
                 <option>Business Intelligence</option>
                 <option>Software Development</option>
                 <option>Web Development</option>
                 <option>Startup Consulting</option>
-              </select>
+              
 
               <textarea
                 rows={5}
@@ -190,11 +195,11 @@ const Contact = () => {
           {/* Founder Card */}
           <div className="bg-gradient-to-br from-[#0F172A] to-[#111827] border border-yellow-500/20 rounded-3xl p-10">
 
-            <img
-              src="/images/adhiraj-profile.png"
+            {/* <img
+              src={profileImage.src}
               alt="Founder"
               className="w-36 h-36 object-cover rounded-full border-4 border-yellow-500 mx-auto"
-            />
+            /> */}
 
             <h3 className="text-center text-3xl font-bold mt-6">
               Adhiraj Pratap Singh
@@ -214,15 +219,15 @@ const Contact = () => {
 
               <a
                 href="mailto:connect@adhirajpratapsingh.in"
-                className="flex items-center gap-3"
+                className="flex items-center gap-3 justify-center w-full"
               >
-                <Mail size={18} className="text-yellow-400" />
+                <Mail size={18} className="text-yellow-400 items-center" />
                 connect@adhirajpratapsingh.in
               </a>
 
               <a
                 href="tel:+919696678829"
-                className="flex items-center gap-3"
+                className="flex items-center gap-3 justify-center w-full"
               >
                 <Phone size={18} className="text-yellow-400" />
                 +91 9696678829
@@ -232,7 +237,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/adhiraj-p-a05925171/"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-3"
+                className="flex items-center gap-3 justify-center w-full"
               >
                 {/* <Linkedin size={18} className="text-yellow-400" /> */}
                 LinkedIn Profile

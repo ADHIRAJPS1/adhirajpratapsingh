@@ -1,8 +1,12 @@
 import Image from "next/image";
 import profileImage from "../public/profile-image.png";
+import Navbar from "./navigation";
 
 export const Founder = () => {
+  console.log("Founder component rendered" , profileImage);
   return (
+    <>
+    <Navbar />
     <section className="px-8 lg:px-20 py-24">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
 
@@ -46,6 +50,7 @@ export const Founder = () => {
 
       </div>
     </section>
+    </>
     
   );
 };
