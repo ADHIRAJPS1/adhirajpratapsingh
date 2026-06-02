@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profileImage from "/public/profile-image.png"
+// import profileImage from "/public/profile-image.png"
 
 export default function Founder  ()  {
   console.log("Founder component rendered");
@@ -8,11 +8,11 @@ export default function Founder  ()  {
       <div className="grid lg:grid-cols-2 gap-16 items-center">
 
         <div>
-          <Image
+          {/* <Image
             src={profileImage}
             alt="Founder"
             className="rounded-1xl shadow-2xl border border-yellow-500"
-          />
+          /> */}
         </div>
 
         <div>
