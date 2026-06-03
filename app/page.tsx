@@ -93,7 +93,9 @@ export default function Home() {
               </button>
 
               <button className="border border-slate-700 hover:border-cyan-400 px-6 py-3 rounded-2xl transition-all text-slate-200">
-                Explore Services
+                <a href="/services" className="text-slate-200">
+                  Explore Services
+                </a>
               </button>
             </div>
           </div>

@@ -7,9 +7,9 @@
         
 //     }
 
-
-
 import React from "react";
+import Image from "next/image";
+
 import {
   Mail,
   Phone,
@@ -18,11 +18,11 @@ import {
   MessageCircle,
   Send,
 } from "lucide-react";
-// import profileImage from "/public/profile-image.png";
+import profileImage from "../../public/profileimage.png";
 import Navbar from "@/components/navigation";
 
 const Contact = () => {
-  console.log( " profile Image = " ); 
+  // console.log( " profile Image = ", profileImage); 
   return (
 
     <div className="bg-[#020817] min-h-screen text-white overflow-hidden">
@@ -77,11 +77,13 @@ const Contact = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-yellow-500 blur-3xl opacity-20 rounded-full"></div>
 
-              {/* <img
-                src={profileImage.src}
+              <Image
+                src={profileImage}
                 alt="Adhiraj Pratap Singh"
-                className="relative w-[380px] h-[380px] object-cover rounded-full border-4 border-yellow-500 shadow-2xl"
-              /> */}
+                width={380}
+                height={380}
+                className="relative rounded-full border-4 border-yellow-500 shadow-2xl"
+              />
             </div>
           </div>
         </div>
@@ -165,15 +167,16 @@ const Contact = () => {
                 className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4"
               />
 
-                          {/* <img
-                            src={profileImage.src}
-                            alt="Adhiraj Pratap Singh"
-                            className="relative w-[380px] h-[380px] object-cover rounded-full border-4 border-yellow-500 shadow-2xl"
-                          /> */}
+                          {/* <div className="relative">
+                <div className="absolute inset-0 rounded-full border-2 border-yellow-500 scale-110"></div> */}
+
+              {/* </div> */}
+                <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4">
                 <option>Business Intelligence</option>
                 <option>Software Development</option>
                 <option>Web Development</option>
                 <option>Startup Consulting</option>
+                </select>
               
 
               <textarea
@@ -195,19 +198,19 @@ const Contact = () => {
           {/* Founder Card */}
           <div className="bg-gradient-to-br from-[#0F172A] to-[#111827] border border-yellow-500/20 rounded-3xl p-10">
 
-            {/* <img
+            <img
               src={profileImage.src}
               alt="Founder"
               className="w-36 h-36 object-cover rounded-full border-4 border-yellow-500 mx-auto"
-            /> */}
+            />
 
             <h3 className="text-center text-3xl font-bold mt-6">
               Adhiraj Pratap Singh
             </h3>
 
-            <p className="text-center text-yellow-400 mt-2">
+            {/* <p className="text-center text-yellow-400 mt-2">
               Founder • Research Consultant
-            </p>
+            </p> */}
 
             <p className="text-slate-400 mt-6 text-center leading-relaxed">
               Helping businesses make informed decisions through
