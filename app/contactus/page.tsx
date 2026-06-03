@@ -4,7 +4,7 @@
 //             <h1 className="text-4xl font-bold">Contact Us Page</h1>
 //         </div>
 //     )
-        
+
 //     }
 
 import React from "react";
@@ -14,7 +14,7 @@ import {
   Mail,
   Phone,
   MapPin,
-//   LinkedinIcon,
+  //   LinkedinIcon,
   MessageCircle,
   Send,
 } from "lucide-react";
@@ -22,9 +22,8 @@ import profileImage from "../../public/profileimage.png";
 import Navbar from "@/components/navigation";
 
 const Contact = () => {
-  // console.log( " profile Image = ", profileImage); 
+  // console.log( " profile Image = ", profileImage);
   return (
-
     <div className="bg-[#020817] min-h-screen text-white overflow-hidden">
       <Navbar />
       {/* Background Glow */}
@@ -34,7 +33,6 @@ const Contact = () => {
       {/* HERO SECTION */}
       <section className="container mx-auto px-6 lg:px-20 py-24 relative z-10">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
-
           {/* Content */}
           <div>
             <span className="border border-yellow-500/40 px-4 py-2 rounded-full text-yellow-400 text-sm">
@@ -92,30 +90,26 @@ const Contact = () => {
       {/* CONTACT CARDS */}
       <section className="container mx-auto px-6 lg:px-20 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-
           <div className="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl">
             <Mail className="text-yellow-400 mb-4" size={30} />
             <h3 className="font-semibold mb-2">Email</h3>
             <p className="text-slate-400 text-sm">
               connect
-              <br />@adhirajpratapsingh.in
+              <br />
+              @adhirajpratapsingh.in
             </p>
           </div>
 
           <div className="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl">
             <Phone className="text-yellow-400 mb-4" size={30} />
             <h3 className="font-semibold mb-2">Phone</h3>
-            <p className="text-slate-400">
-              +91 9696678829
-            </p>
+            <p className="text-slate-400">+91 9696678829</p>
           </div>
 
           <div className="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl">
             <MessageCircle className="text-yellow-400 mb-4" size={30} />
             <h3 className="font-semibold mb-2">WhatsApp</h3>
-            <p className="text-slate-400">
-              Available Mon - Sat
-            </p>
+            <p className="text-slate-400">Available Mon - Sat</p>
           </div>
 
           <div className="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl">
@@ -130,19 +124,32 @@ const Contact = () => {
         </div>
       </section>
 
+      <h3 className=" font-bold text-center mt-20 mb-10">
+        PLEASE DO MAIL US OR CONNECT WITH US ON WHATSAPP TO DISCUSS YOUR PROJECT
+        OR INQUIRIES. WE LOOK FORWARD TO HEARING FROM YOU!
+        <br />
+        <span className="text-yellow-400">
+          WE LOOK FORWARD TO HEARING FROM YOU!
+        </span>
+        <br />
+        <p>THE FORM IS CURRENTLY NON FUNCTIONAL AND UNDER DEVELOPMENT</p>
+      </h3>
       {/* CONTACT FORM */}
       <section className="container mx-auto px-6 lg:px-20 py-20">
         <div className="grid lg:grid-cols-2 gap-10">
-
           {/* Form */}
           <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl">
-
-            <h2 className="text-3xl font-bold mb-8">
-              Send an Inquiry
-            </h2>
+            <h2 className="text-3xl font-bold mb-8">Send an Inquiry</h2>
+            <p className="text-slate-400 mb-8 leading-relaxed">
+              THIS FORM IS CURRENTLY UNDER DEVELOPMENT
+              <br />
+              <span className="text-yellow-400">
+                SO PLEASE REACH OUT TO US VIA EMAIL OR WHATSAPP TO DISCUSS YOUR
+                PROJECT OR INQUIRIES. WE LOOK FORWARD TO HEARING FROM YOU!
+              </span>
+            </p>
 
             <form className="space-y-5">
-
               <input
                 type="text"
                 placeholder="Full Name"
@@ -167,17 +174,16 @@ const Contact = () => {
                 className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4"
               />
 
-                          {/* <div className="relative">
+              {/* <div className="relative">
                 <div className="absolute inset-0 rounded-full border-2 border-yellow-500 scale-110"></div> */}
 
               {/* </div> */}
-                <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4">
+              <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4">
                 <option>Business Intelligence</option>
                 <option>Software Development</option>
                 <option>Web Development</option>
                 <option>Startup Consulting</option>
-                </select>
-              
+              </select>
 
               <textarea
                 rows={5}
@@ -197,7 +203,6 @@ const Contact = () => {
 
           {/* Founder Card */}
           <div className="bg-gradient-to-br from-[#0F172A] to-[#111827] border border-yellow-500/20 rounded-3xl p-10">
-
             <img
               src={profileImage.src}
               alt="Founder"
@@ -213,13 +218,11 @@ const Contact = () => {
             </p> */}
 
             <p className="text-slate-400 mt-6 text-center leading-relaxed">
-              Helping businesses make informed decisions through
-              research-driven strategies, data intelligence,
-              consulting, and software solutions.
+              Helping businesses make informed decisions through research-driven
+              strategies, data intelligence, consulting, and software solutions.
             </p>
 
             <div className="space-y-4 mt-8">
-
               <a
                 href="mailto:connect@adhirajpratapsingh.in"
                 className="flex items-center gap-3 justify-center w-full"
@@ -252,16 +255,12 @@ const Contact = () => {
 
       {/* CTA */}
       <section className="container mx-auto px-6 lg:px-20 pb-24">
-
         <div className="bg-gradient-to-r from-yellow-500/20 to-yellow-300/10 border border-yellow-500/30 rounded-3xl p-12 text-center">
-
-          <h2 className="text-4xl font-bold">
-            Ready to Discuss Your Project?
-          </h2>
+          <h2 className="text-4xl font-bold">Ready to Discuss Your Project?</h2>
 
           <p className="text-slate-300 mt-4 max-w-2xl mx-auto">
-            Let's explore how research, analytics, and technology can
-            help your organization grow.
+            Let's explore how research, analytics, and technology can help your
+            organization grow.
           </p>
 
           <a
@@ -271,7 +270,6 @@ const Contact = () => {
             Schedule a Consultation
           </a>
         </div>
-
       </section>
     </div>
   );
