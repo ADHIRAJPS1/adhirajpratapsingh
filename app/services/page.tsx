@@ -287,9 +287,12 @@ export default function ServicesPage() {
                         ))}
                       </ul>
 
-                      <button className="mt-6 w-full bg-gradient-to-r from-yellow-500 to-amber-400 text-black font-semibold py-3 rounded-xl hover:scale-105 transition">
+                      <a
+                        href="/contactus"
+                        className="mt-6 inline-flex w-full items-center justify-center bg-gradient-to-r from-yellow-500 to-amber-400 text-black font-semibold py-3 rounded-xl hover:scale-105 transition"
+                      >
                         Request Proposal
-                      </button>
+                      </a>
                     </div>
                   )}
                 </div>
