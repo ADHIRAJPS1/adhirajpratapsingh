@@ -1,9 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { signOut, useSession } from 'next-auth/react';
 import Navbar from '@/components/navigation';
+import GoogleLoginButton from './googlelogin';
 
 export default function AuthPage() {
   const [isLogin, setIsLogin] = useState(true);
@@ -13,6 +14,7 @@ export default function AuthPage() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const router = useRouter();
+  const { data: session, status } = useSession();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -149,14 +151,24 @@ export default function AuthPage() {
           </p>
         </div>
 
-        <div className="mt-6 flex gap-3">
-          <button className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-lg transition duration-200">
-            Google
-          </button>
-          <button className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-lg transition duration-200">
-            GitHub
-          </button>
-        </div>
+        {session ? (
+          <div className="mt-6 rounded-2xl border border-green-200 bg-green-50 p-4 text-green-900">
+            <p className="font-semibold">Signed in as</p>
+            <p className="text-sm">{session.user?.name ?? session.user?.email}</p>
+            <p className="text-sm text-slate-600">{session.user?.email}</p>
+            <button
+              type="button"
+              onClick={() => signOut()}
+              className="mt-4 w-full bg-slate-800 hover:bg-slate-900 text-white py-2 rounded-lg transition duration-200"
+            >
+              Sign out
+            </button>
+          </div>
+        ) : (
+          <div className="mt-6">
+            <GoogleLoginButton />
+          </div>
+        )}
       </div>
     </div>
     </>
