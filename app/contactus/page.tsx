@@ -16,10 +16,10 @@ import {
   MapPin,
   //   LinkedinIcon,
   MessageCircle,
-  Send,
 } from "lucide-react";
 import profileImage from "../../public/profileimage.png";
 import Navbar from "@/components/navigation";
+import InquiryForm from "@/components/InquiryForm";
 
 const Contact = () => {
   // console.log( " profile Image = ", profileImage);
@@ -124,81 +124,16 @@ const Contact = () => {
         </div>
       </section>
 
-      <h3 className=" font-bold text-center mt-20 mb-10">
-        PLEASE DO MAIL US OR CONNECT WITH US ON WHATSAPP TO DISCUSS YOUR PROJECT
-        OR INQUIRIES. WE LOOK FORWARD TO HEARING FROM YOU!
-        <br />
-        <span className="text-yellow-400">
-          WE LOOK FORWARD TO HEARING FROM YOU!
-        </span>
-        <br />
-        <p>THE FORM IS CURRENTLY NON FUNCTIONAL AND UNDER DEVELOPMENT</p>
-      </h3>
       {/* CONTACT FORM */}
       <section className="container mx-auto px-6 lg:px-20 py-20">
         <div className="grid lg:grid-cols-2 gap-10">
           {/* Form */}
           <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl">
-            <h2 className="text-3xl font-bold mb-8">Send an Inquiry</h2>
+            <h2 className="text-3xl font-bold mb-4">Send an Inquiry</h2>
             <p className="text-slate-400 mb-8 leading-relaxed">
-              THIS FORM IS CURRENTLY UNDER DEVELOPMENT
-              <br />
-              <span className="text-yellow-400">
-                SO PLEASE REACH OUT TO US VIA EMAIL OR WHATSAPP TO DISCUSS YOUR
-                PROJECT OR INQUIRIES. WE LOOK FORWARD TO HEARING FROM YOU!
-              </span>
+              Fill in the details below and we&apos;ll get back to you as soon as possible.
             </p>
-
-            <form className="space-y-5">
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4"
-              />
-
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4"
-              />
-
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4"
-              />
-
-              <input
-                type="text"
-                placeholder="Company Name"
-                className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4"
-              />
-
-              {/* <div className="relative">
-                <div className="absolute inset-0 rounded-full border-2 border-yellow-500 scale-110"></div> */}
-
-              {/* </div> */}
-              <select className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4">
-                <option>Business Intelligence</option>
-                <option>Software Development</option>
-                <option>Web Development</option>
-                <option>Startup Consulting</option>
-              </select>
-
-              <textarea
-                rows={5}
-                placeholder="Project Description"
-                className="w-full bg-slate-900 border border-slate-700 rounded-xl p-4"
-              />
-
-              <button
-                type="submit"
-                className="w-full bg-yellow-500 text-black py-4 rounded-xl font-semibold flex justify-center items-center gap-2 hover:scale-[1.02] transition"
-              >
-                Send Inquiry
-                <Send size={18} />
-              </button>
-            </form>
+            <InquiryForm />
           </div>
 
           {/* Founder Card */}
