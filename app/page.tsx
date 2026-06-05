@@ -77,30 +77,30 @@ export default function Home() {
       {/* Hero Section */}
       
         <Navbar />
-      <section className="px-6 py-20 md:px-16 lg:px-24">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+      <section className="px-4 sm:px-6 py-12 sm:py-20 md:px-16 lg:px-24">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
           <div>
-            <span className="inline-flex items-center rounded-full border border-cyan-500/40 bg-cyan-500/10 px-4 py-1 text-sm text-cyan-300 mb-6">
+            <span className="inline-flex items-center rounded-full border border-cyan-500/40 bg-cyan-500/10 px-3 sm:px-4 py-1 text-xs sm:text-sm text-cyan-300 mb-4 sm:mb-6">
               Research • Analytics • Consulting
             </span>
 
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Transforming Data Into
               <span className="text-cyan-400"> Strategic Decisions</span>
             </h1>
 
-            <p className="mt-6 text-lg text-slate-300 leading-relaxed max-w-2xl">
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
               We are a modern research and consulting startup helping businesses,
               students, creators, and organizations unlock the true value of data
               through in-depth research, analytics, and insight-driven solutions.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
-              <button className="bg-cyan-500 hover:bg-cyan-400 transition-all px-6 py-3 rounded-2xl font-semibold text-slate-900 shadow-lg shadow-cyan-500/30">
+            <div className="mt-6 sm:mt-8 flex flex-wrap gap-3 sm:gap-4">
+              <button className="bg-cyan-500 hover:bg-cyan-400 transition-all px-4 sm:px-6 py-2 sm:py-3 rounded-2xl font-semibold text-sm sm:text-base text-slate-900 shadow-lg shadow-cyan-500/30">
                 Work With Us
               </button>
 
-              <button className="border border-slate-700 hover:border-cyan-400 px-6 py-3 rounded-2xl transition-all text-slate-200">
+              <button className="border border-slate-700 hover:border-cyan-400 px-4 sm:px-6 py-2 sm:py-3 rounded-2xl transition-all text-slate-200 text-sm sm:text-base">
                 <a href="/services" className="text-slate-200">
                   Explore Services
                 </a>
@@ -108,36 +108,36 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-5">
-            <div className="bg-slate-900/70 border border-slate-800 rounded-3xl p-6 backdrop-blur-sm shadow-xl">
-              <h3 className="text-4xl font-bold text-cyan-400">100+</h3>
-              <p className="mt-2 text-slate-300">Research Reports & Projects</p>
+          <div className="grid grid-cols-2 gap-3 sm:gap-5">
+            <div className="bg-slate-900/70 border border-slate-800 rounded-2xl sm:rounded-3xl p-3 sm:p-6 backdrop-blur-sm shadow-xl">
+              <h3 className="text-2xl sm:text-4xl font-bold text-cyan-400">100+</h3>
+              <p className="mt-1 sm:mt-2 text-xs sm:text-sm text-slate-300">Research Reports & Projects</p>
             </div>
 
-            <div className="bg-slate-900/70 border border-slate-800 rounded-3xl p-6 mt-10 backdrop-blur-sm shadow-xl">
-              <h3 className="text-4xl font-bold text-cyan-400">24/7</h3>
-              <p className="mt-2 text-slate-300">Client Support & Assistance</p>
+            <div className="bg-slate-900/70 border border-slate-800 rounded-2xl sm:rounded-3xl p-3 sm:p-6 sm:mt-10 backdrop-blur-sm shadow-xl">
+              <h3 className="text-2xl sm:text-4xl font-bold text-cyan-400">24/7</h3>
+              <p className="mt-1 sm:mt-2 text-xs sm:text-sm text-slate-300">Client Support & Assistance</p>
             </div>
 
-            <div className="bg-slate-900/70 border border-slate-800 rounded-3xl p-6 backdrop-blur-sm shadow-xl">
-              <h3 className="text-4xl font-bold text-cyan-400">Data</h3>
-              <p className="mt-2 text-slate-300">Focused Market Intelligence</p>
+            <div className="bg-slate-900/70 border border-slate-800 rounded-2xl sm:rounded-3xl p-3 sm:p-6 backdrop-blur-sm shadow-xl">
+              <h3 className="text-2xl sm:text-4xl font-bold text-cyan-400">Data</h3>
+              <p className="mt-1 sm:mt-2 text-xs sm:text-sm text-slate-300">Focused Market Intelligence</p>
             </div>
 
-            <div className="bg-slate-900/70 border border-slate-800 rounded-3xl p-6 mt-10 backdrop-blur-sm shadow-xl">
-              <h3 className="text-4xl font-bold text-cyan-400">Growth</h3>
-              <p className="mt-2 text-slate-300">Strategies Built on Research</p>
+            <div className="bg-slate-900/70 border border-slate-800 rounded-2xl sm:rounded-3xl p-3 sm:p-6 sm:mt-10 backdrop-blur-sm shadow-xl">
+              <h3 className="text-2xl sm:text-4xl font-bold text-cyan-400">Growth</h3>
+              <p className="mt-1 sm:mt-2 text-xs sm:text-sm text-slate-300">Strategies Built on Research</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section className="px-6 py-20 md:px-16 lg:px-24 border-t border-slate-800">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      <section className="px-4 sm:px-6 py-12 sm:py-20 md:px-16 lg:px-24 border-t border-slate-800">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
-            <h2 className="text-4xl font-bold mb-6">Who We Are</h2>
-            <p className="text-slate-300 leading-relaxed text-lg mb-5">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">Who We Are</h2>
+            <p className="text-slate-300 leading-relaxed text-sm sm:text-base lg:text-lg mb-4 sm:mb-5">
               Our startup was founded with one mission — to make high-quality
               research and strategic insights accessible, actionable, and impactful.
               We combine research expertise, data analytics, market intelligence,
