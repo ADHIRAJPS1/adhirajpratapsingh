@@ -26,11 +26,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Providers>{children}</Providers>
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
       </body>
     </html>
   );

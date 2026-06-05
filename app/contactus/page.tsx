@@ -27,8 +27,8 @@ const Contact = () => {
     <div className="bg-[#020817] min-h-screen text-white overflow-hidden">
       <Navbar />
       {/* Background Glow */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
+      <div className="hidden md:block absolute top-20 left-10 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl" />
+      <div className="hidden md:block absolute bottom-20 right-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl" />
 
       {/* HERO SECTION */}
       <section className="container mx-auto px-6 lg:px-20 py-24 relative z-10">
@@ -76,6 +76,7 @@ const Contact = () => {
               <div className="absolute inset-0 bg-yellow-500 blur-3xl opacity-20 rounded-full"></div>
 
               <Image
+                loading="eager"
                 src={profileImage}
                 alt="Adhiraj Pratap Singh"
                 width={380}

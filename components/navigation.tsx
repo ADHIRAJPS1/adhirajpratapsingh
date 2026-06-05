@@ -68,6 +68,8 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
+              aria-expanded={isOpen}
+              aria-label={isOpen ? 'Close navigation' : 'Open navigation'}
               className="md:hidden text-slate-800"
             >
               {isOpen ? <X size={26} /> : <Menu size={26} />}
@@ -83,6 +85,7 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
+                  onClick={() => setIsOpen(false)}
                   className="text-slate-700 font-medium hover:text-blue-700"
                 >
                   {link.name}
@@ -91,6 +94,7 @@ export default function Navbar() {
 
               <Link
                 href="/contactus"
+                onClick={() => setIsOpen(false)}
                 className="bg-blue-900 text-white text-center py-3 rounded-xl"
               >
                 Get a Quote
