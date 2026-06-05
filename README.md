@@ -1,36 +1,278 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Adhiraj Pratap Singh – Professional Portfolio & Business Website
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project is a modern, responsive, and scalable web application built using Next.js, React, TypeScript, and Tailwind CSS. The website serves as both a professional portfolio and a business platform, showcasing expertise, services, projects, achievements, and opportunities for collaboration.
+
+The primary objective of this platform is to establish a strong digital presence while providing visitors with comprehensive information about professional experience, technical expertise, consulting services, research solutions, and business offerings.
+
+---
+
+## Key Features
+
+### Home Page
+
+* Modern hero section
+* Professional introduction
+* Dynamic call-to-action sections
+* Responsive design
+
+### About Us
+
+* Personal and professional background
+* Mission and vision statements
+* Industry expertise
+* Career achievements
+
+### Services
+
+Interactive service showcase including:
+
+* Software Development
+* Full Stack Development
+* Web Application Development
+* Research & Development Services
+* Data Analytics
+* Business Consulting
+* Market Research
+* Technical Documentation
+* UI/UX Design Consultation
+
+### Profile Section
+
+* Professional summary
+* Skills and competencies
+* Client achievements
+* Industry experience
+* Certifications and accomplishments
+
+### Contact Us
+
+* Inquiry form
+* Email integration
+* Social media links
+* Business contact information
+
+### Responsive Design
+
+* Mobile-first architecture
+* Tablet compatibility
+* Desktop optimization
+* Cross-browser support
+
+---
+
+## Technology Stack
+
+### Frontend
+
+* Next.js 15+
+* React 19+
+* TypeScript
+* Tailwind CSS
+
+### UI Components
+
+* Lucide React Icons
+* Custom Components
+* Responsive Layouts
+
+### Development Tools
+
+* ESLint
+* PostCSS
+* npm
+
+---
+
+## Project Structure
+
+```bash
+project-root/
+│
+├── app/
+│   ├── page.tsx
+│   ├── about/
+│   ├── services/
+│   ├── contactus/
+│   └── profile/
+│
+├── components/
+│
+├── public/
+│   ├── images/
+│   └── assets/
+│
+├── styles/
+│
+├── tailwind.config.ts
+├── next.config.ts
+├── package.json
+└── README.md
+```
+
+---
+
+## System Requirements
+
+### Software Requirements
+
+| Software | Version       |
+| -------- | ------------- |
+| Node.js  | 20.x or later |
+| npm      | 10.x or later |
+| Git      | Latest Stable |
+
+### Recommended IDE
+
+* Visual Studio Code
+
+Recommended Extensions:
+
+* ESLint
+* Tailwind CSS IntelliSense
+* Prettier
+* TypeScript Toolbox
+
+---
+
+## Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/your-username/repository-name.git
+```
+
+### Navigate to Project Directory
+
+```bash
+cd repository-name
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Running the Application
+
+### Development Mode
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Production Build
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Start Production Server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Run Lint Checks
 
-## Deploy on Vercel
+```bash
+npm run lint
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Environment Variables
+
+Create a `.env.local` file in the root directory.
+
+```env
+NEXT_PUBLIC_SITE_NAME=Adhiraj Pratap Singh
+NEXT_PUBLIC_EMAIL=connect@adhirajpratapsingh.com
+NEXT_PUBLIC_PHONE=YourPhoneNumber
+NEXT_PUBLIC_LINKEDIN=YourLinkedInURL
+NEXT_PUBLIC_GITHUB=YourGitHubURL
+```
+
+---
+
+## Current Release
+
+### Version 1.0.0
+
+Initial frontend release containing:
+
+* Home Page
+* About Us Page
+* Services Page
+* Contact Page
+* Profile Section
+* Responsive UI
+* Modern Design System
+
+---
+
+## Planned Enhancements
+
+### Phase 2
+
+* Backend Integration
+* User Authentication
+* Admin Dashboard
+* Project Management System
+* Client Portal
+* Payment Gateway Integration
+
+### Phase 3
+
+* AI-Powered Features
+* Advanced Analytics
+* CRM Integration
+* Research Management System
+* Team Collaboration Modules
+
+---
+
+## Developer Statement
+
+This project represents the first official release of a professional portfolio and business platform developed for personal utilization and future commercial expansion.
+
+The current version focuses on establishing a robust frontend architecture, professional branding, responsive design, and a seamless user experience. Future releases will progressively introduce advanced business functionalities, backend services, client management capabilities, and automation features.
+
+The platform is designed with scalability, maintainability, and performance as core principles to support long-term growth and evolving business requirements.
+
+---
+
+## Author
+
+### Adhiraj Pratap Singh
+
+Software Engineer | Research Consultant | Business Strategist
+
+Specializations:
+
+* Full Stack Development
+* Data Analytics
+* Market Research
+* Business Consulting
+* Product Development
+
+Email: [connect@adhirajpratapsingh.com](mailto:connect@adhirajpratapsingh.com)
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+© 2026 Adhiraj Pratap Singh. All Rights Reserved.
