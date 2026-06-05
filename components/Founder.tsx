@@ -12,10 +12,12 @@ export const Founder = () => {
 
         <div>
           <Image
+            loading="eager"
             src={profileImage}
             alt="Founder"
             className="rounded-1xl shadow-2xl border border-yellow-500"
           />
+        </div>
         </div>
 
         <div>
@@ -48,8 +50,7 @@ export const Founder = () => {
           </div>
         </div>
 
-      </div>
-    </section>
+      </section>
     </>
     
   );
