@@ -139,6 +139,7 @@ const Contact = () => {
           {/* Founder Card */}
           <div className="bg-gradient-to-br from-[#0F172A] to-[#111827] border border-yellow-500/20 rounded-3xl p-10">
             <img
+              loading="eager"
               src={profileImage.src}
               alt="Founder"
               className="w-36 h-36 object-cover rounded-full border-4 border-yellow-500 mx-auto"

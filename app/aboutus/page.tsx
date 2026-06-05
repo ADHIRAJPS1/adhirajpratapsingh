@@ -131,6 +131,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 rounded-full border-2 border-yellow-500 scale-110"></div>
 
                 <Image
+                  loading="eager"
                   src={profileImage}
                   alt="Adhiraj Pratap Singh"
                   width={380}
@@ -311,7 +312,7 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto px-6 lg:px-12 text-center">
 
           <h2 className="text-5xl font-bold">
-            Founder Message
+            Developer's Message
           </h2>
 
           <blockquote className="mt-10 text-2xl text-slate-300 italic leading-relaxed">
@@ -326,7 +327,7 @@ export default function AboutPage() {
             </h3>
 
             <p className="text-slate-500 mt-2">
-              Founder & CEO
+                  Developer and Consultant
             </p>
           </div>
         </div>

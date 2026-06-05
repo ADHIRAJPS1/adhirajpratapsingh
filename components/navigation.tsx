@@ -13,16 +13,16 @@ export default function Navbar() {
     // { name: "Work With Us", href: "/work-with-us" },
     { name: "Contact Us", href: "/contactus" },
     { name: "About Us", href: "/aboutus" },
-    { name: "Login", href: "/login" }
+    // { name: "Login", href: "/login" }
   ];
 
   return (
     <>
       <div className="overflow-hidden border-b border-slate-800 bg-yellow-400 text-slate-950">
         <div className="animate-marquee whitespace-nowrap py-3 text-center text-sm uppercase tracking-[0.25em] font-semibold">
+          <span className="inline-block px-8">SOME FEATURES MIGHT NOT WORK AS EXPECTED</span>
           <span className="inline-block px-8">THIS SITE IS UNDER DEVELOPMENT</span>
-          <span className="inline-block px-8">THIS SITE IS UNDER DEVELOPMENT</span>
-          <span className="inline-block px-8">THIS SITE IS UNDER DEVELOPMENT</span>
+          <span className="inline-block px-8">SOME FEATURES MIGHT NOT WORK AS EXPECTED</span>
           <span className="inline-block px-8">THIS SITE IS UNDER DEVELOPMENT</span>
         </div>
       </div>
@@ -37,10 +37,10 @@ export default function Navbar() {
               </div>
               <div>
                 <h1 className="font-bold text-slate-900 text-lg">
-                  Adhiraj Research
+                  Adhiraj Pratap Singh
                 </h1>
                 <p className="text-xs text-slate-500">
-                  Research & Consulting
+                  Developer and Consultant
                 </p>
               </div>
             </Link>
