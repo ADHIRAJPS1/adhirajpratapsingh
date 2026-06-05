@@ -37,10 +37,10 @@ export default function Navbar() {
               </div>
               <div>
                 <h1 className="font-bold text-slate-900 text-lg">
-                  Adhiraj Research
+                  Adhiraj Pratap Singh
                 </h1>
                 <p className="text-xs text-slate-500">
-                  Research & Consulting
+                  Developer and Consultant
                 </p>
               </div>
             </Link>
