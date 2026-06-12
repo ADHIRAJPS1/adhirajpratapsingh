@@ -23,6 +23,7 @@ import InquiryForm from "@/components/InquiryForm";
 
 const Contact = () => {
   // console.log( " profile Image = ", profileImage);
+ 
   return (
     <div className="bg-[#020817] min-h-screen text-white overflow-hidden">
       <Navbar />

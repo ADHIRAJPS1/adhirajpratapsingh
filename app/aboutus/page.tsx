@@ -1,6 +1,5 @@
 import Navbar from "@/components/navigation";
 import profileImage from "../../public/profileimage.png";
-
 import { Metadata } from "next";
 
 // dynamic metadata generation based on search params or fetched data
@@ -74,6 +73,8 @@ import {
 } from "lucide-react";
 
 export default function AboutPage() {
+
+  
   const services = [
     "Market Research",
     "Business Consulting",
@@ -92,8 +93,11 @@ export default function AboutPage() {
     { number: "98%", label: "Client Satisfaction" },
   ];
 
+  
+
+
   return (
-    <>
+    <> 
       <Navbar />
     <main className="bg-slate-950 text-white min-h-screen">
       {/* HERO */}
