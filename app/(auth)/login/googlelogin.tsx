@@ -9,6 +9,7 @@ const clientIdValue = googleClientId.endsWith(".apps.googleusercontent.com")
   ? googleClientId
   : `${googleClientId}.apps.googleusercontent.com`;
 
+// Google Login Button
 export default function GoogleLoginButton() {
   const handleGoogleSignIn = async () => {
     await signIn("google", { callbackUrl: "/home" });
