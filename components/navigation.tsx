@@ -1,8 +1,17 @@
 "use client";
 
-import Link from "next/link";
+import NextLink from "next/link";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, type ComponentType, type MouseEventHandler, type ReactNode } from "react";
+
+type AppLinkProps = {
+  href: string;
+  children?: ReactNode;
+  className?: string;
+  onClick?: MouseEventHandler<HTMLAnchorElement>;
+};
+
+const Link = NextLink as unknown as ComponentType<AppLinkProps>;
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,14 +27,14 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="overflow-hidden border-b border-slate-800 bg-yellow-400 text-slate-950">
+      {/* <div className="overflow-hidden border-b border-slate-800 bg-yellow-400 text-slate-950">
         <div className="animate-marquee whitespace-nowrap py-3 text-center text-sm uppercase tracking-[0.25em] font-semibold">
           <span className="inline-block px-8">SOME FEATURES MIGHT NOT WORK AS EXPECTED</span>
           <span className="inline-block px-8">THIS SITE IS UNDER DEVELOPMENT</span>
           <span className="inline-block px-8">SOME FEATURES MIGHT NOT WORK AS EXPECTED</span>
           <span className="inline-block px-8">THIS SITE IS UNDER DEVELOPMENT</span>
         </div>
-      </div>
+      </div> */}
       <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">

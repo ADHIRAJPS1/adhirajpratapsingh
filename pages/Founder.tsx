@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next";
 // import profileImage from "/public/profile-image.png"
 
 export default function Founder  ()  {

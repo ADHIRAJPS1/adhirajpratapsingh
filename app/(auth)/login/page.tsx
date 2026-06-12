@@ -16,6 +16,8 @@ export default function AuthPage() {
   const router = useRouter();
   const { data: session, status } = useSession();
 
+
+  // handleSubmit form details
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
@@ -70,6 +72,7 @@ export default function AuthPage() {
           {isLogin ? 'Login to your account' : 'Sign up to get started'}
         </p>
 
+        {/* form details */}
         <form onSubmit={handleSubmit} className="space-y-4">
           {error && (
             <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded">
